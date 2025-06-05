@@ -1,49 +1,99 @@
+        /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: #333;
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding-top: 80px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
+/* About Section */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #0d6efd;
 }
 
-nav ul li {
+/* Skills Section */
+.skill-item h4 {
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
+
+/* Projects Section */
+.card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.social-links a {
     display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
+    width: 40px;
+    height: 40px;
+    background: #0d6efd;
     color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-article {
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #f2f2f2;
+    border-radius: 50%;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: #0b5ed7;
+    transform: translateY(-3px);
+}
+
+/* Form Styles */
+.form-control {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Section Padding */
+section {
+    padding: 80px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
 }
